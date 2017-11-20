@@ -1,0 +1,18 @@
+name: XiaoHan
+description: 'html5 bootstrap template that is good for creative and portfolio sites. This template uses mosaic grid for a homepage to show off your artworks professionally and elegantly.'
+author: 'grianchan'
+homepage: 'https://grianchan.com'
+code: zhan-to-xiaohan
+form:
+    fields:
+        site_name:
+            label: blog name
+            comment: ''
+            default: 'Let''s blogging...'
+        avatar_url:
+            label: avatar url
+            comment: '72x72'
+            default: 'http://ozp0fta05.bkt.clouddn.com/logo%2072x72.jpg'
+
+require:
+  - Acme.Blog

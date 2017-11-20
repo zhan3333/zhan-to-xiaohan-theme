@@ -1,0 +1,17 @@
+[viewBag]
+==
+<div id="fh5co-board" data-columns>
+
+    {% set posts = blogPosts.posts %}
+    
+    {% for post in blogPosts.posts %}
+        {% for image in post.featured_images%}
+    	<div class="item">
+    		<div class="animate-box">
+        		<a href="{{ image.path }}" class="image-popup fh5co-board-img" title="{{ post.title }}"><img src="{{ image.path }}" alt="{{ post.excerpt }}"></a>
+    		</div>
+    		<div class="fh5co-desc">{{ post.excerpt }}</div>
+    	</div>
+    	{% endfor %}
+	{% endfor %}
+</div>
